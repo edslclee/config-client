@@ -1,5 +1,9 @@
 server:
   port: 8088
----
-test:
-  str: test-str
+----
+spring:
+  application:
+    name: configtest-dev
+    config:
+      import: optional:configserver:http://localhost:9900
+
